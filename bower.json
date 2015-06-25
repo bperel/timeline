@@ -2,8 +2,7 @@
     "name": "d3-timeline",
     "version": "0.1.0",
     "main": [
-        "js/timeline.js",
-        "sass/motion.scss"
+        "js/timeline.js"
     ],
     "homepage": "https://github.com/bperel/timeline",
     "authors": [
@@ -13,7 +12,7 @@
         "globals"
     ],
     "license": "CC-BY-SA-2.0",
-    "private": true,
+    "private": false,
     "ignore": [
         "**/.*",
         "bower_components"
