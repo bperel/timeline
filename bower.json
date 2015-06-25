@@ -1,0 +1,20 @@
+{
+    "name": "geotime",
+    "version": "0.1.0",
+    "homepage": "https://github.com/bperel/timeline",
+    "authors": [
+        "Bruno Pérel <brunoperel@gmail.com>"
+    ],
+    "moduleType": [
+        "globals"
+    ],
+    "license": "CC-BY-SA-2.0",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "bower_components"
+    ],
+    "dependencies": {
+        "d3": "~3.5.5"
+    }
+}
