@@ -57,7 +57,8 @@ function timeline(domElement) {
         data.items = items;
 
         function showItems(n) {
-            var count = 0, n = n || 10;
+            var count = 0;
+            n = n || 10;
             console.log("\n");
             items.forEach(function (d) {
                 count++;
@@ -123,7 +124,7 @@ function timeline(domElement) {
             // The timeline never reaches into the future.
             // This is an arbitrary decision.
             // Comment out, if dates in the future should be allowed.
-            if (item.end > today) { item.end = today};
+            if (item.end > today) { item.end = today}
         });
 
         //showItems();
@@ -155,8 +156,8 @@ function timeline(domElement) {
         band.trackOffset = 4;
         // Prevent tracks from getting too high
         band.trackHeight = Math.min((band.h - band.trackOffset) / data.nTracks, 20);
-        band.itemHeight = band.trackHeight * 0.8,
-        band.parts = [],
+        band.itemHeight = band.trackHeight * 0.8;
+        band.parts = [];
         band.instantWidth = 100; // arbitray value
 
         band.xScale = d3.time.scale()
@@ -440,7 +441,7 @@ function timeline(domElement) {
         // bcString is the prefix or postfix for BC dates.
         // If bcString starts with '-' (minus),
         // if will be placed in front of the year.
-        bcString = bcString || " BC" // With blank!
+        bcString = bcString || " BC"; // With blank!
         var year = date.getUTCFullYear();
         if (year > 0) return year.toString();
         if (bcString[0] == '-') return bcString + (-year);
