@@ -1,6 +1,10 @@
 {
-    "name": "geotime",
+    "name": "d3-timeline",
     "version": "0.1.0",
+    "main": [
+        "js/timeline.js",
+        "sass/motion.scss"
+    ],
     "homepage": "https://github.com/bperel/timeline",
     "authors": [
         "Bruno Pérel <brunoperel@gmail.com>"
